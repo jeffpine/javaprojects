@@ -3,17 +3,18 @@ import java.util.Scanner;
 
 public class Desafio {
     public static void main(String[] args) {
+        //variaveis declaradas
         String nome = "claudio";
         String tipoConta = "corrente";
         double saldo = 1599.99;
         int opcao = 0;
-
+        
         System.out.println("*********************");
         System.out.println("\nNome do cliente: " + nome);
         System.out.println("Tipo de conta: " + tipoConta);
         System.out.println("Saldo atual: " + saldo);
         System.out.println("\n*********************");
-
+//menu do programa
         String menu = """
                 ** Digite sua opção **
                 1 - Consultar saldo
@@ -22,9 +23,10 @@ public class Desafio {
                 4 - Sair
 
                 """;
+        //metodo para inserir valor
         Scanner leitura = new Scanner(System.in);
 
-
+//condicionais para as opçoes do menu e calculos
         while (opcao != 4) {
             System.out.println(menu);
             opcao = leitura.nextInt();
